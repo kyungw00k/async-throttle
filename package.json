@@ -6,6 +6,9 @@
   "files": [
     "index.js"
   ],
+  "scripts": {
+    "test": "ava"
+  },
   "description": "Throttle asynchronous Promise-based tasks",
   "devDependencies": {
     "ava": "0.16.0",
