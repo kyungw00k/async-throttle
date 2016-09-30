@@ -7,6 +7,8 @@ Throttling made simple, easy, async.
 This example fetches the `<title>` tag of the supplied websites,
 but it processes a maximum of **two at a time**.
 
+<img src="https://cldup.com/QstcrynRNT.gif" width="400" align="right" />
+
 ```js
 // deps
 const fetch = require('node-fetch')
@@ -25,8 +27,6 @@ Promise.all(urls.map((url) => throttle(async () => {
 })))
 .then((titles) => console.log('Titles:', titles))
 ```
-
-![](https://cldup.com/QstcrynRNT.gif)
 
 To run this example:
 
