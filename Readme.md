@@ -4,9 +4,10 @@ Throttling made simple, easy, async.
 
 ## How to use
 
-The following code fetches the contents of the `<title>` tag
-of the supplied websites, but it processes a maximum of
-**two at a time**.
+This example fetches the `<title>` tag of the supplied websites,
+but it processes a maximum of **two at a time**.
+
+![](https://cldup.com/QstcrynRNT.gif)
 
 ```js
 // deps
@@ -26,8 +27,6 @@ Promise.all(urls.map((url) => throttle(async () => {
 })))
 .then((titles) => console.log('Titles:', titles))
 ```
-
-![](https://cldup.com/QstcrynRNT.gif)
 
 To run this example:
 
